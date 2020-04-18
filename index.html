@@ -20,7 +20,7 @@
 
 
 		div#text {
-		    margin-top: 150px;
+		    margin-top: 90px;
 		    line-height: 15px;
 		}
 
@@ -30,7 +30,7 @@
 		    margin: auto;
 		    display: block;
 		    width: 100%;
-		    opacity: 50%;
+		    color: #f0f8ff80;
 		    font-size: 13px;
 		}
 
@@ -50,7 +50,7 @@
 
 		div#button{
 			position: absolute;
-			bottom: 80px;
+			bottom: 50px;
 			width: 100%;
 		}
 
@@ -65,17 +65,27 @@
 		}
 
 		button.confirm{
-			background: #0abd11ed;
+			width: 60%;
+			height: 55px;
+			font-weight: bold;
+			background: #fb5603e0;
+			font-size: 15px;
 		}
 
-button.confirm {}
 		button.cancel{
-			background: #f443368a;
+			background: #3e3e3e82;
+			color: #ffffff91;
 		}
 
 
 	    	
-    	@media screen and (min-width: 1024px) {
+    	@media screen and (max-width: 375px) {
+    			div#button{
+					bottom: -30px;
+				}
+				p#price {
+		    		bottom: -60px;
+		    	}
 	    	}
     	}
 	    </style>
@@ -84,13 +94,19 @@ button.confirm {}
     <body>
     	<div id="text">
 	        <!-- <p class="title">DAILY PACKAGE</p> -->
-	        <p class="package">DAILY PACKAGE</p>
+	        <!-- <p class="package">DAILY PACKAGE</p> -->
+	        <br>
 	        <p class="slogan">Let's see your Future, your Destiny...</p>
         </div>
-        <p id="price">10 cents/day</p>
+        <p id="price">
+        	DAILY PACKAGE
+			<br>
+        	5 cents/day
+    	</p>
 
         <div id="button">
         	<button class="confirm">Confirm</button>
+        	<br>
         	<button class="cancel">Cancel</button>
         </div>
     </body>
